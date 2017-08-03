@@ -3,6 +3,7 @@
 if(isset($_POST['password'])) $password = $_POST['password'];
 if(isset($password)) $md5password = md5($password);
 if(isset($password)) $sha1password = sha1($password);
+if(isset($password)) $cryptpassword = crypt($password);
 
 ?>
 <!DOCTYPE>
@@ -22,6 +23,9 @@ if(isset($password)) $sha1password = sha1($password);
 </p>
 <p><strong>Sha1:</strong> 
 <?php echo isset($password) ? $sha1password : 'nothing to do'; ?>
+</p>
+<p><strong>Crypt:</strong> 
+<?php echo isset($password) ? $cryptpassword : 'nothing to do'; ?>
 </p>
 
 </div>

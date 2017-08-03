@@ -5,7 +5,9 @@
 }
 
 #password{
-	margin-top: 10%;
+/*	margin-top: 10%;*/
+    width: 30em;
+    margin: 0px auto;	
 }
 
 #submit{
